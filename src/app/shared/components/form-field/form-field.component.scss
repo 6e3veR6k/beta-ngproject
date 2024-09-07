@@ -1,0 +1,28 @@
+$base-color: #b3b3b3;
+$hover-color: #93c9ff;
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 8px;
+
+  .label {
+    font-size: 12px;
+    line-height: 1.2;
+    color: $base-color;
+  }
+
+  .input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $base-color;
+    background-color: transparent;
+    padding: 4px 8px;
+    color: $base-color;
+
+    &:focus {
+      outline: none;
+      color: darken($base-color, 40%);
+      border-bottom: 1px solid $hover-color;
+    }
+  }
+}

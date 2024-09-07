@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #fafafa;
+  padding: 10px 8px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f1d1e;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "STHeiti", system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+
+  .logo-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .logo-text {
+    display: block;
+    color: inherit;
+    margin-left: 4px;
+   }
+
+  &:hover {
+    color: #115265;
+  }
+}

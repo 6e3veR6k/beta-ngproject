@@ -1,0 +1,10 @@
+:host {
+  display: inline-block;
+
+  .svg-icon {
+    display: inline-block;
+    fill: currentColor;
+    overflow: hidden;
+    all: inherit;
+  }
+}

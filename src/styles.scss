@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #0f1d1e;
+  background-color: #fafafa;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  
+  &.primary {
+    background-color: #0487f1;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten(#0487f1, 20%);
+    }
+  }
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
