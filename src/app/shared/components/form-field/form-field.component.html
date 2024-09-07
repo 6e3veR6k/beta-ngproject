@@ -1,4 +1,11 @@
 <div class="form-field">
   <label for="{{prop.name}}" class="label">Search</label>
-  <input type="{{prop.type}}" id="{{prop.name}}" name="{{prop.name}}" class="input" placeholder="{{prop.placeholder}}" [(ngModel)]="value"/>
+  <input
+      type="{{prop.type}}"
+      id="{{prop.name}}"
+      name="{{prop.name}}"
+      class="input"
+      placeholder="{{prop.placeholder}}"
+      [ngModel]="value"
+      (ngModelChange)="onChangeInput($event)"/>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 
 @Component({
@@ -12,7 +12,12 @@ import { FormsModule } from "@angular/forms";
 })
 export class FormFieldComponent {
   @Input({required: true}) prop!: { name: string, placeholder: string, type: string };
-  @Output() value: string = '';
+  @Output() valueChange = new EventEmitter<string>();
+  value: string = '';
 
 
+  onChangeInput($event: string) {
+    this.value = $event;
+    this.valueChange.emit(this.value);
+  }
 }
