@@ -1,6 +1,10 @@
-<section>
+<section class="section">
   <form class="form search-form" (ngSubmit)="onFormSubmit($event)">
     <app-form-field [prop]="searchInput" (valueChange)="onSearch($event)"></app-form-field>
     <button class="btn primary" type="submit" (click)="onSearchBtn()">Search</button>
   </form>
 </section>
+<section class="section results">
+  <app-housing-location></app-housing-location>
+</section>
+
